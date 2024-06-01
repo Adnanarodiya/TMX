@@ -5,13 +5,32 @@ export default {
     extend: {
       container: {
         center: true,
-        padding: "1rem",
+        // screens: {
+        //   DEFAULT: "1720px",
+        // },
+        padding: {
+          DEFAULT: "16px",
+          sm: "16px",
+          lg: "20px",
+          xl: "30px",
+          "2xl": "0px",
+        },
         screens: {
-          DEFAULT: "1720px",
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1720px",
         },
       },
+      
       colors: {
         purple: "#68328A",
+        background: "#F6F6F6",
+        orange: "#D64729"
+      },
+      fontFamily: {
+        'dm-sans': ['DM Sans', 'sans-serif'],
       },
     },
   },
