@@ -7,17 +7,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      
       <div className="bg-purple  text-center text-white py-3 text-[13px] sm:text-[15px] min-h-[50px]">
-    <div className="container">
-      <p>
-
-        Have a question or need assistance with your logistics needs? Our team
-        is here to help. Contact us today for a personalized solution tailored
-        to your business.
-      </p>
+        <div className="container">
+          <p>
+            Have a question or need assistance with your logistics needs? Our
+            team is here to help. Contact us today for a personalized solution
+            tailored to your business.
+          </p>
+        </div>
       </div>
-    </div>
 
       <div className="bg-custom-gradient">
         <Header />
@@ -30,7 +28,9 @@ function App() {
       </div>
 
       <section className="container mt-[50px] sm:mt-[100px]">
-        <h1 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">Who We Are</h1>
+        <h1 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
+          Who We Are
+        </h1>
         <p className="mt-3 max-w-[1200px] text-center mx-auto ">
           Welcome to TMX Global, your premier partner in freight, imports, and
           exports. With decades of experience, we pride ourselves on providing
