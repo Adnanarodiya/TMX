@@ -2,7 +2,7 @@ import GloabCard from "../GloabCard";
 
 export default function OurGlobalReach() {
     return (
-        <section className="container pt-[50px] sm:pt-[100px]">
+        <section id="location" className="container pt-[50px] sm:pt-[100px]">
             <h1 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
                 Our Global Reach
             </h1>

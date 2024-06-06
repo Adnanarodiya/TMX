@@ -7,7 +7,6 @@ import OurGlobalReach from "./components/pages/OurGlobalReach";
 import ClientsSay from "./components/pages/ClientsSay";
 import Benefits from "./components/pages/Benefits";
 import Affiliate from "./components/pages/Affiliate";
-import Paid from "./components/pages/Paid";
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
       <Affiliate />
       <Benefits />
       <ClientsSay />
-      <Paid />
       <Footer />
       <div className="bg-purple text-center min-h-[50px] text-white py-3">
         © 2024 TMX Global All rights reserved

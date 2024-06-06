@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+// import { IoIosArrowDown } from "react-icons/io";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -71,28 +71,29 @@ export default function Header() {
           >
             <ul className="flex flex-col p-4 xl:p-0 sm:mt-[5px] xl:mt-[20px] font-medium rtl:space-x-reverse xl:flex-row gap-10 mt-[20px]">
               <li className="text-[17px]">
-                <a href="#">Home</a>
+                <a href="#" onClick={() => scrollToSection("home")}>Home</a>
               </li>
               <li className="text-[17px]">
                 <a href="#" onClick={() => scrollToSection("about")}>About</a>
               </li>
-              <div className="flex gap-2 items-center">
-                <li className="text-[17px]">
-                  <a href="#">Membership</a>
-                </li>
-                <IoIosArrowDown />
-              </div>
               <li className="text-[17px]">
                 <a href="#" onClick={() => scrollToSection("services")}>Services</a>
               </li>
+              <div className="flex gap-2 items-center">
+                <li className="text-[17px]">
+                  <a href="#" onClick={() => scrollToSection("membership")}>Membership</a>
+                </li>
+                {/* <IoIosArrowDown /> */}
+              </div>
+
               <li className="text-[17px]">
-                <a href="#">Location</a>
+                <a href="#" onClick={() => scrollToSection("location")}>Location</a>
               </li>
               <li className="text-[17px]">
-                <a href="#">Contact</a>
+                <a href="#" onClick={() => scrollToSection("contact")}>Contact</a>
               </li>
               <li className="text-[17px]">
-                <a href="#">Affiliate Program</a>
+                <a href="#" onClick={() => scrollToSection("affiliate-program")}>Affiliate Program</a>
               </li>
               {/* Add the buttons here for mobile view */}
               <li className="text-[17px] xl:hidden">
