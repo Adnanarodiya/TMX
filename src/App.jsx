@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Footer from "./components/pages/Footer";
+// import Footer from "./components/pages/Footer";
 import Hero from "./components/pages/Hero";
 import WhoWeAre from "./components/pages/WhoWeAre";
 import OurService from "./components/pages/OurService";
@@ -11,7 +11,7 @@ import Affiliate from "./components/pages/Affiliate";
 function App() {
   return (
     <>
-      <div className="bg-purple  text-center text-white py-3 text-[13px] sm:text-[15px] min-h-[50px]">
+      {/* <div className="bg-purple  text-center text-white py-3 text-[13px] sm:text-[15px] min-h-[50px]">
         <div className="container">
           <p>
             Have a question or need assistance with your logistics needs? Our
@@ -19,7 +19,7 @@ function App() {
             tailored to your business.
           </p>
         </div>
-      </div>
+      </div> */}
       <Hero />
       <WhoWeAre />
       <OurService />
@@ -27,10 +27,10 @@ function App() {
       <Affiliate />
       <Benefits />
       <ClientsSay />
-      <Footer />
+      {/* <Footer />
       <div className="bg-purple text-center min-h-[50px] text-white py-3">
         © 2024 TMX Global All rights reserved
-      </div>
+      </div> */}
     </>
   );
 }

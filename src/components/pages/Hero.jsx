@@ -1,9 +1,9 @@
-import Header from "../Header";
+// import Header from "../Header";
 
 export default function Hero() {
     return (
         <div id="home" className="bg-custom-gradient">
-            <Header />
+            {/* <Header /> */}
             <section className="container">
                 <div className="relative w-full">
                     <img className="object-cover" src="/image.png" alt="" />
