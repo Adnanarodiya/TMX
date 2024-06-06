@@ -7,6 +7,12 @@ export default function Header() {
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
   };
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="container">
@@ -59,9 +65,8 @@ export default function Header() {
             </button>
           </div>
           <div
-            className={`items-center justify-between w-full xl:flex xl:w-auto xl:order-1 ${
-              isNavOpen ? "flex" : "hidden"
-            }`}
+            className={`items-center justify-between w-full xl:flex xl:w-auto xl:order-1 ${isNavOpen ? "flex" : "hidden"
+              }`}
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 xl:p-0 sm:mt-[5px] xl:mt-[20px] font-medium rtl:space-x-reverse xl:flex-row gap-10 mt-[20px]">
@@ -69,7 +74,7 @@ export default function Header() {
                 <a href="#">Home</a>
               </li>
               <li className="text-[17px]">
-                <a href="#">About</a>
+                <a href="#" onClick={() => scrollToSection("about")}>About</a>
               </li>
               <div className="flex gap-2 items-center">
                 <li className="text-[17px]">
@@ -78,7 +83,7 @@ export default function Header() {
                 <IoIosArrowDown />
               </div>
               <li className="text-[17px]">
-                <a href="#">Services</a>
+                <a href="#" onClick={() => scrollToSection("services")}>Services</a>
               </li>
               <li className="text-[17px]">
                 <a href="#">Location</a>

@@ -2,7 +2,7 @@ import ServiceCard from "../ServiceCard";
 
 export default function OurService() {
     return (
-        <section className="mt-[50px] sm:mt-[100px] bg-purple text-white py-[50px] sm:py-[100px]">
+        <section id="services" className="mt-[50px] sm:mt-[100px] bg-purple text-white py-[50px] sm:py-[100px]">
             <div className="container ">
                 <div>
                     <h3 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">

@@ -2,7 +2,7 @@ import Card from "../Card";
 
 export default function WhoWeAre() {
     return (
-        <section className="container mt-[50px] sm:mt-[100px]">
+        <section id="about" className="container mt-[50px] sm:mt-[100px]">
             <h1 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
                 Who We Are
             </h1>
