@@ -1,8 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import Card from "./components/Card";
 import Header from "./components/Header";
 import ServiceCard from "./components/ServiceCard";
 import GloabCard from "./components/GloabCard";
+import BenefitsCard from "./components/BenefitsCard";
 import Footer from "./components/Footer";
+import ClientSayCar from "./components/ClientSayCar";
 
 function App() {
   return (
@@ -142,7 +145,7 @@ function App() {
         </div>
       </section>
 
-      <section className="container py-[50px] sm:py-[100px]">
+      <section className="container pt-[50px] sm:pt-[100px]">
         <h1 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
           Our Global Reach
         </h1>
@@ -200,7 +203,74 @@ function App() {
         </div>
       </section>
 
-      <section className="container">
+      <section className="mt-[50px] sm:mt-[100px] bg-purple text-white py-[50px] sm:py-[100px]">
+        <div className="container ">
+          <h3 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
+            What Our Clients Say
+          </h3>
+
+          <div className="mt-10">
+            <ClientSayCar />
+          </div>
+        </div>
+      </section>
+
+      <section className="container mt-[50px] sm:mt-[100px]">
+        <h1 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
+          Membership and Benefits
+        </h1>
+        <p className="mt-3 max-w-[1200px] text-center mx-auto ">
+          Welcome to our exclusive membership program. By joining, you'll gain
+          access to a host of benefits designed to help you grow and succeed.
+          Our program is tailored to provide support, resources, and
+          opportunities that will enhance your business and personal growth.
+        </p>
+
+        <div className="container2 mx-auto mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 justify-center">
+            <BenefitsCard
+              imgSrc="/referral.svg"
+              title="Work Referrals"
+              description="Receive referrals and connect with potential clients and partners."
+            />
+            <BenefitsCard
+              imgSrc="/events.svg"
+              title="Exclusive Events"
+              description="Access to members-only events, workshops, and networking opportunities."
+            />
+            <BenefitsCard
+              imgSrc="/cooperation.svg"
+              title="Collaboration and Cooperation"
+              description="Collaborate with industry experts and fellow members for mutual growth."
+            />
+            <BenefitsCard
+              imgSrc="/marketing.svg"
+              title="Free Marketing"
+              description="Benefit from free marketing and promotional support."
+            />
+            <BenefitsCard
+              imgSrc="/alerts.svg"
+              title="Information Sharing and Important Alerts"
+              description="Stay informed with the latest industry news and alerts."
+            />
+            <BenefitsCard
+              imgSrc="/management.svg"
+              title="Social Media and Page Management"
+              description="Get support for managing your social media presence and web pages."
+            />
+          </div>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            className="border text-red-500  h-[45px] px-[18px] rounded-full"
+          >
+            Become a member
+          </button>
+        </div>
+      </section>
+
+      <section className="container mt-[50px] sm:mt-[100px]">
         <div className="bg-purple text-white py-[50px] sm:py-[100px]">
           <h2 className="text-[35px] sm:text-[42px] lg:text-[50px] font-semibold text-center">
             Get paid Anytime Anywhere
