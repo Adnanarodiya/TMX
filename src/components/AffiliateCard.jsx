@@ -12,5 +12,5 @@ export default function AffiliateCard({ imgSrc, title, description }) {
                 {description}
             </p>
         </div>
-    )
+    );
 }

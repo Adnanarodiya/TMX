@@ -11,5 +11,5 @@ export default function BenefitsCard({ imgSrc, title, description }) {
                 <p className="pr-1 mt-[10px] text-base text-gray-600">{description}</p>
             </div>
         </div>
-    )
+    );
 }
