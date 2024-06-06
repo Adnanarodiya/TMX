@@ -9,12 +9,14 @@ import {
 import App from './App.jsx'
 import Layout from './Layout.jsx'
 import './index.css'
-import SignIn from './components/SignIn.jsx'
+import SignIn from './components/pages/SignIn.jsx'
+import Agents from './components/pages/Agents.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path='' element={<App />} />
       <Route path='signin' element={<SignIn />} />
+      <Route path='agents' element={<Agents />} />
     </Route>
   )
 );

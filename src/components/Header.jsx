@@ -20,10 +20,14 @@ export default function Header() {
         <nav className="bg-white">
           <div className="flex flex-wrap items-center justify-between mx-auto p-4">
             <a
-              href="#"
+              href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
-              <img className="w-[70px] sm:w-[90px]" src="/logo.png" alt="Logo" />
+              <img
+                className="w-[70px] sm:w-[90px]"
+                src="/logo.png"
+                alt="Logo"
+              />
             </a>
             <div className="flex xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
               <div className="sm:flex gap-4 sm:mt-[5px] xl:mt-[20px] hidden">
@@ -31,16 +35,13 @@ export default function Header() {
                   type="button"
                   className="border h-[45px] px-[18px] rounded-full leading-[15px]"
                 >
-                  Agents
+                  <Link to="/agents">Agents</Link>
                 </button>
                 <button
                   type="button"
                   className="bg-purple text-white h-[45px] px-[18px] rounded-full leading-[15px]"
                 >
-                  <Link to="/signin">
-
-                    Sign in
-                  </Link>
+                  <Link to="/signin">Sign in</Link>
                 </button>
               </div>
               <button
@@ -75,29 +76,46 @@ export default function Header() {
             >
               <ul className="flex flex-col p-4 xl:p-0 sm:mt-[5px] xl:mt-[20px] font-medium rtl:space-x-reverse xl:flex-row gap-10 mt-[20px]">
                 <li className="text-[17px]">
-                  <a href="/" onClick={() => scrollToSection("home")}>Home</a>
+                  <a href="/" onClick={() => scrollToSection("home")}>
+                    Home
+                  </a>
                 </li>
                 <li className="text-[17px]">
-                  <a href="#" onClick={() => scrollToSection("about")}>About</a>
+                  <a href="#" onClick={() => scrollToSection("about")}>
+                    About
+                  </a>
                 </li>
                 <li className="text-[17px]">
-                  <a href="#" onClick={() => scrollToSection("services")}>Services</a>
+                  <a href="#" onClick={() => scrollToSection("services")}>
+                    Services
+                  </a>
                 </li>
                 <div className="flex gap-2 items-center">
                   <li className="text-[17px]">
-                    <a href="#" onClick={() => scrollToSection("membership")}>Membership</a>
+                    <a href="#" onClick={() => scrollToSection("membership")}>
+                      Membership
+                    </a>
                   </li>
                   {/* <IoIosArrowDown /> */}
                 </div>
 
                 <li className="text-[17px]">
-                  <a href="#" onClick={() => scrollToSection("location")}>Location</a>
+                  <a href="#" onClick={() => scrollToSection("location")}>
+                    Location
+                  </a>
                 </li>
                 <li className="text-[17px]">
-                  <a href="#" onClick={() => scrollToSection("contact")}>Contact</a>
+                  <a href="#" onClick={() => scrollToSection("contact")}>
+                    Contact
+                  </a>
                 </li>
                 <li className="text-[17px]">
-                  <a href="#" onClick={() => scrollToSection("affiliate-program")}>Affiliate Program</a>
+                  <a
+                    href="#"
+                    onClick={() => scrollToSection("affiliate-program")}
+                  >
+                    Affiliate Program
+                  </a>
                 </li>
                 {/* Add the buttons here for mobile view */}
                 <li className="text-[17px] xl:hidden">
@@ -113,9 +131,7 @@ export default function Header() {
                     type="button"
                     className="bg-purple text-white h-[45px] px-[18px] rounded-full leading-[15px]"
                   >
-                    <Link to="/signin">
-                      Sign in
-                    </Link>
+                    <Link to="/signin">Sign in</Link>
                   </button>
                 </li>
               </ul>
