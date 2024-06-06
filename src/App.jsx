@@ -25,9 +25,9 @@ function App() {
       <WhoWeAre />
       <OurService />
       <OurGlobalReach />
-      <ClientsSay />
-      <Benefits />
       <Affiliate />
+      <Benefits />
+      <ClientsSay />
       <Paid />
       <Footer />
       <div className="bg-purple text-center min-h-[50px] text-white py-3">
